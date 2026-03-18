@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "categorie",
+    "pluralName": "categories",
+    "displayName": "Categorie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post.post",
+      "inversedBy": "categories"
+    }
+  }
+}
