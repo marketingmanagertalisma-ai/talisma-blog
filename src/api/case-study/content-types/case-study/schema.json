@@ -98,6 +98,9 @@
     },
     "talisma_solution": {
       "type": "string"
+    },
+    "sort_order": {
+      "type": "integer"
     }
   }
 }

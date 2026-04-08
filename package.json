@@ -4,7 +4,6 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "backup": "bash backup.sh",
     "build": "strapi build",
     "console": "strapi console",
     "deploy": "strapi deploy",

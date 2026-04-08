@@ -474,6 +474,7 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
     organizaion_size: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    sort_order: Schema.Attribute.Integer;
     talisma_module: Schema.Attribute.String;
     talisma_product: Schema.Attribute.String;
     talisma_solution: Schema.Attribute.String;
