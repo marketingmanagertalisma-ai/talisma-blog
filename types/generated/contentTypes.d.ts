@@ -442,6 +442,8 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
   };
   attributes: {
     about: Schema.Attribute.Text & Schema.Attribute.Required;
+    card_description: Schema.Attribute.Text;
+    card_title: Schema.Attribute.String;
     Company_Size: Schema.Attribute.String & Schema.Attribute.Required;
     content: Schema.Attribute.RichText & Schema.Attribute.Required;
     cover_image: Schema.Attribute.Media<

@@ -69,6 +69,12 @@
     "Headquarters": {
       "type": "string",
       "required": true
+    },
+    "card_title": {
+      "type": "string"
+    },
+    "card_description": {
+      "type": "text"
     }
   }
 }
