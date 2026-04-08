@@ -441,10 +441,13 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    about: Schema.Attribute.Text & Schema.Attribute.Required;
+    base_user: Schema.Attribute.Integer;
     card_description: Schema.Attribute.Text;
     card_title: Schema.Attribute.String;
-    Company_Size: Schema.Attribute.String & Schema.Attribute.Required;
+    client_name: Schema.Attribute.String;
+    client_position: Schema.Attribute.String;
+    client_testimonial: Schema.Attribute.Text;
+    company_type: Schema.Attribute.String;
     content: Schema.Attribute.RichText & Schema.Attribute.Required;
     cover_image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -453,22 +456,27 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    customer_since: Schema.Attribute.String;
     desc: Schema.Attribute.Text & Schema.Attribute.Required;
     detail_page_image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     > &
       Schema.Attribute.Required;
-    Founded: Schema.Attribute.Integer & Schema.Attribute.Required;
-    Headquarters: Schema.Attribute.String & Schema.Attribute.Required;
-    Industry: Schema.Attribute.String & Schema.Attribute.Required;
+    Founded: Schema.Attribute.Integer;
+    Industry: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::case-study.case-study'
     > &
       Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    organizaion_size: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    talisma_module: Schema.Attribute.String;
+    talisma_product: Schema.Attribute.String;
+    talisma_solution: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

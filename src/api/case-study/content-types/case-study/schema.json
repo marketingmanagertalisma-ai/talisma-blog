@@ -50,31 +50,54 @@
         "audios"
       ]
     },
-    "about": {
-      "type": "text",
-      "required": true
-    },
     "Industry": {
       "type": "string",
-      "required": true
+      "required": false
     },
-    "Company_Size": {
+    "organizaion_size": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Founded": {
       "type": "integer",
-      "required": true
+      "required": false
     },
-    "Headquarters": {
+    "location": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "card_title": {
       "type": "string"
     },
     "card_description": {
       "type": "text"
+    },
+    "client_testimonial": {
+      "type": "text"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "client_position": {
+      "type": "string"
+    },
+    "company_type": {
+      "type": "string"
+    },
+    "customer_since": {
+      "type": "string"
+    },
+    "base_user": {
+      "type": "integer"
+    },
+    "talisma_module": {
+      "type": "string"
+    },
+    "talisma_product": {
+      "type": "string"
+    },
+    "talisma_solution": {
+      "type": "string"
     }
   }
 }
